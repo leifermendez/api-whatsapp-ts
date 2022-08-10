@@ -3,3 +3,4 @@ node_modules
 dist
 tmp/*
 !tmp/.gitkeep
+.wwebjs_auth/session
