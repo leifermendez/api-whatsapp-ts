@@ -1,4 +1,4 @@
-import LeadExternal from "../domain/lead.external";
+import LeadExternal from "../domain/lead-external.repository";
 import LeadRepository from "../domain/lead.repository";
 
 export class LeadCreate {

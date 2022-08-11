@@ -5,25 +5,31 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ./src/app.ts"
+    "dev": "nodemon ./src/app.ts",
+    "start": "node ./dist/app.js",
+    "build": "tsc -p  ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.27.2",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "node-dependency-injection": "^3.0.3",
     "qr-image": "^3.2.0",
+    "twilio": "^3.80.1",
     "uuid": "^8.3.2",
     "whatsapp-web.js": "^1.17.1"
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@types/cors": "^2.8.12",
     "@types/dotenv": "^8.2.0",
     "@types/express": "^4.17.13",
     "@types/qr-image": "^3.2.5",
+    "@types/twilio": "^3.19.3",
     "@types/uuid": "^8.3.4",
     "typescript": "^4.7.4"
   }

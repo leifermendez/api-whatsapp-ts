@@ -1,6 +1,6 @@
 import { Client, LocalAuth } from "whatsapp-web.js";
 import { image as imageQr } from "qr-image";
-import LeadExternal from "../../domain/lead.external";
+import LeadExternal from "../../domain/lead-external.repository";
 
 /**
  * Extendemos los super poderes de whatsapp-web
@@ -28,7 +28,10 @@ class WsTransporter extends Client implements LeadExternal {
       console.log("LOGIN_FAIL");
     });
 
-    this.on("qr", (qr) => this.generateImage(qr));
+    this.on("qr", (qr) => {
+      console.log('Escanea el codigo QR que esta en la carepta tmp')
+      this.generateImage(qr)
+    });
   }
 
   /**
