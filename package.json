@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ./src/app.ts",
+    "dev:http": "nodemon ./src/http/index.ts",
+    "dev:bot": "nodemon ./src/http/index.ts",
     "start": "node ./dist/app.js",
     "build": "tsc -p  ."
   },
