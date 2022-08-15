@@ -8,11 +8,14 @@ app.use(cors());
 app.use(express.json());
 app.use(`/`, routes);
 
-export default class Http {
+class Http {
   constructor() {}
 
   public startServer() {
     const server = app.listen(port, () => console.log(`Ready...${port}`));
-    return server
+    return server;
   }
 }
+
+const http = new Http();
+export default http;

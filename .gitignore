@@ -4,3 +4,4 @@ dist
 tmp/*
 !tmp/.gitkeep
 .wwebjs_auth
+.tmp

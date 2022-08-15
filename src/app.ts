@@ -1,4 +1,5 @@
 import Http from "./http";
+import Bot from "./bot"
 
-const http = new Http()
-http.startServer()
+Bot.startBot()
+// Http.startServer()
