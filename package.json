@@ -23,7 +23,7 @@
     "uuid": "^8.3.2",
     "nodemon": "^2.0.20",
     "ts-node":"^10.9.1",
-    "whatsapp-web.js": "^1.19.2"
+    "whatsapp-web.js": "^1.19.4"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
