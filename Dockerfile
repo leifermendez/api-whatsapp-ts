@@ -30,6 +30,7 @@ RUN addgroup -S pptruser && adduser -S -G pptruser pptruser \
 USER pptruser
 
 RUN npm install
+RUN npm build
 ARG PUBLIC_URL
 ARG PORT
 CMD ["npm", "start"]
