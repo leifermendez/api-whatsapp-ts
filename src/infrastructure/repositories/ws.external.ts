@@ -11,7 +11,13 @@ class WsTransporter extends Client implements LeadExternal {
   constructor() {
     super({
       authStrategy: new LocalAuth(),
-      puppeteer: { headless: true },
+      puppeteer: {
+        headless: true,
+        args: [
+          "--disable-setuid-sandbox",
+          "--unhandled-rejections=strict",
+        ],
+      },
     });
 
     console.log("Iniciando....");
@@ -29,8 +35,8 @@ class WsTransporter extends Client implements LeadExternal {
     });
 
     this.on("qr", (qr) => {
-      console.log('Escanea el codigo QR que esta en la carepta tmp')
-      this.generateImage(qr)
+      console.log("Escanea el codigo QR que esta en la carepta tmp");
+      this.generateImage(qr);
     });
   }
 
